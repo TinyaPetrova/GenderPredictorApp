@@ -1,0 +1,157 @@
+body {
+  background-color: blanchedalmond;
+  font-family: "Tilt Neon", sans-serif;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+}
+
+h1 {
+  display: flex;
+  justify-content: flex-start;
+  color: #a55132;
+}
+
+header {
+  background-color: #462d1d;
+  color: blanchedalmond;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  max-width: 98.4%;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  top: 0;
+  background-color: #462d1d;
+  width: 100%;
+  margin: 0 auto;
+}
+
+nav a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: blanchedalmond;
+  text-decoration: none;
+  margin: 0px;
+  flex: 1;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #a55132;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  max-height: 60vh;
+}
+
+p {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+span {
+  font-size: large;
+  font-weight: 600;
+}
+
+input {
+  background-color: blanchedalmond;
+  border: 3px #a55132 dashed;
+  outline: none;
+  color: #6c3d21;
+}
+
+input::placeholder {
+  color: #a5513284;
+  font-style: italic;
+}
+
+button {
+  background-color: #a55132;
+  color: blanchedalmond;
+  border: 3px #462d1d solid;
+}
+
+button:hover {
+  background-color: #462d1d;
+}
+
+label {
+  font-weight: bold;
+  color: #462d1d;
+}
+
+.hint {
+  font-style: italic;
+  color: #a55132;
+}
+
+.loader {
+  border: 5px solid #f3f3f3;
+  border-top: 5px solid #a55132;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 2s linear infinite;
+  margin: 0 auto;
+}
+
+.result {
+  font-weight: 600;
+  color: #462d1d;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #462d1d;
+  color: blanchedalmond;
+  height: 3vh;
+  margin: 0;
+  padding: 20px;
+  bottom: 0;
+  position: fixed;
+  left: 0;
+  width: 100%;
+}
+
+@media screen and (max-width: 390px) {
+  header {
+    max-width: 94.8%;
+  }
+
+  main {
+    padding: 10px;
+  }
+  nav {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  nav a {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 10px 10px;
+  }
+}

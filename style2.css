@@ -1,0 +1,63 @@
+body {
+  min-height: 100vh;
+}
+
+.characterCard {
+  display: flex;
+  background-color: #a5513284;
+  color: #462d1d;
+  border: 3px solid #462d1d;
+  padding: 10px;
+  margin: 10px;
+  min-height: 300px;
+  max-width: 100%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.characterCard img {
+  width: 20%;
+  margin: 0;
+}
+
+.characterCard .info {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  text-align: left;
+  margin-top: 10px;
+}
+
+.characterCard h2,
+.characterCard p {
+  margin: 5px;
+  text-align: left;
+}
+
+.characterCard p:nth-child(1) {
+  margin-top: 0;
+  margin-top: 10px;
+  display: none;
+}
+
+.characterCard:hover {
+  background-color: #877163;
+}
+
+@media screen and (max-width: 390px) {
+  header {
+    max-width: 94.8%;
+  }
+
+  .characterCard {
+    flex-direction: column;
+    min-height: auto;
+    text-align: center;
+  }
+
+  .characterCard img {
+    width: 50%;
+    margin: 10px 0;
+  }
+}

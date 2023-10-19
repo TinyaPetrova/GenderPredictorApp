@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+    <title>Gender prediction service</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html">About service</a>
+            <a href="input.html">Try our service</a>
+            <a href="clients.html">Clients about us</a>
+            <a href="contacts.html">Our contacts</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Gender prediction</h1>
+        <p>Welcome to a free demo of our service! <br>
+            We are still working on the paid version, we will tell you about it later. <br><br>
+            Rose? Maria? Ivan? Joan? Choose any name to check which gender it is most often used!</p>
+        <label for="nameInput">Enter a name: </label><br><br>
+        <input type="text" id="nameInput" placeholder="Type it here...">
+        <button id="btn" onclick="predictGender()">Predict</button>
+        <div id="loader" style="display: none" class="loader"></div>
+        <div id="hint" class="hint">
+            <p>Hint: <br>
+                0 is the minimum probability <br>
+                1 is the maximum probability
+            </p>
+        </div>
+        <div id="result" class="result">
+        </div>
+    </main>
+    <footer>
+        &copy; 2023 All rights are reserved
+    </footer>
+</body>
+
+</html>
